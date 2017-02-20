@@ -5,7 +5,7 @@ enum	e_boolean
 {
   TRUE = 1,
   FALSE = 0,
-  ERROR= -1
+  ERROR = -1
 };
 
 #endif	/* !GLOBAL_H_ */
