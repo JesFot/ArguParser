@@ -31,6 +31,13 @@ enum	e_flag_types
   FLAG_VALUE
 };
 
+enum	e_use_of_key
+{
+  ONLY_KEY,
+  ONLY_SINGLE,
+  KEY_AND_SINGLE
+};
+
 struct	s_argvalue
 {
     int	type;
@@ -52,6 +59,7 @@ struct		s_arg
     char	single;
     int		type;
     int		mandat;
+    int		use_of_key;
     char	key[MAX_KEY_LENGTH];
     char	description[MAX_DESCRIPTION_LENGTH];
     t_argvalue	*value;
