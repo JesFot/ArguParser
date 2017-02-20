@@ -9,11 +9,11 @@ int	check_length(char *str, int expected)
     {
       if (it > expected)
 	{
-	  return (0);
+	  return (FALSE);
 	}
       it += 1;
     }
-  return (it == expected);
+  return (it == expected ? TRUE : FALSE);
 }
 
 int	equals(char *str, char *expected)
@@ -25,11 +25,11 @@ int	equals(char *str, char *expected)
     {
       if (str[it] == '\0' || expected[it] == '\0')
 	{
-	  return (0);
+	  return (FALSE);
 	}
       it += 1;
     }
-  return (1);
+  return (TRUE);
 }
 
 int	contains(char *str, char *ends)
@@ -46,11 +46,11 @@ int	contains(char *str, char *ends)
 	  while (ends[it2] == str[it])
 	    it2 += 1;
 	  if (ends[it2] == '\0')
-	    return (1);
+	    return (TRUE);
 	}
       it += 1;
     }
-  return (0);
+  return (FALSE);
 }
 
 int	starts_with(char *str, char *starts)
@@ -62,13 +62,13 @@ int	starts_with(char *str, char *starts)
     {
       if (starts[it] == '\0')
 	{
-	  return (1);
+	  return (TRUE);
 	}
       else if (str[it] == '\0')
 	{
-	  return (0);
+	  return (FALSE);
 	}
       it += 1;
     }
-  return (1);
+  return (TRUE);
 }

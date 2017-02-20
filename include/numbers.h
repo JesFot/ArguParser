@@ -1,6 +1,8 @@
 #ifndef	NUMBERS_H_
 # define	NUMBERS_H_
 
+#include "global.h"
+
 int	is_num(char c);
 int	is_valid_nbr(char *str, int *index);
 int	is_valid_float(char *str, int *index);

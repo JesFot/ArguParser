@@ -11,9 +11,9 @@ int	is_num(char c)
 {
   if (c >= '0' && c <= '9')
     {
-      return (1);
+      return (TRUE);
     }
-  return (0);
+  return (FALSE);
 }
 
 int	is_valid_nbr(char *str, int *index)
@@ -22,22 +22,22 @@ int	is_valid_nbr(char *str, int *index)
     {
       if (str[*index] < '0' || str[*index] > '9')
 	{
-	  return (0);
+	  return (FALSE);
 	}
       *index += 1;
     }
-  return (1);
+  return (TRUE);
 }
 
 int	is_valid_float(char *str, int *index)
 {
-  if (!is_valid_nbr(str, index))
+  if (is_valid_nbr(str, index) == FALSE)
     {
-      return (0);
+      return (FALSE);
     }
   if (str[*index] != '.')
     {
-      return (0);
+      return (FALSE);
     }
   *index += 1;
   return (is_valid_nbr(str, index));
