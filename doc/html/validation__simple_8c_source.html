@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Argument Parser:  Fichier source de src/numbers/validation_simple.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="milkyway5.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Argument Parser
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A simple library to parse arguments in C</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('validation__simple_8c_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">validation_simple.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="validation__simple_8c.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../../include/numbers.h&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="validation__simple_8c.html#a319b8f80fc0eabc63c5d8a9566ce17eb">   10</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="validation__simple_8c.html#a319b8f80fc0eabc63c5d8a9566ce17eb">is_svalid_nbr</a>(<span class="keywordtype">char</span> *str)</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordtype">int</span>   index;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  index = 0;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="numbers_8h.html#ac6964a30af3665e1651e43b77d4ee261">is_valid_nbr</a>(str, &amp;index));</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="validation__simple_8c.html#a045b64c7d387939fb481485c012cdb46">   18</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="validation__simple_8c.html#a045b64c7d387939fb481485c012cdb46">is_svalid_float</a>(<span class="keywordtype">char</span> *str)</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">int</span>   index;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  index = 0;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="numbers_8h.html#a6992181d9ef9061cad273be1a264fe7e">is_valid_float</a>(str, &amp;index));</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="validation__simple_8c.html#a7ca01e23e4dc862cc69a2ca1213e7044">   26</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="validation__simple_8c.html#a7ca01e23e4dc862cc69a2ca1213e7044">is_svalid_signed</a>(<span class="keywordtype">char</span> *str)</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">int</span>   index;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  index = 0;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="numbers_8h.html#a2f2beb5b51a2f859e0fb724833174fa3">is_valid_signed</a>(str, &amp;index));</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="validation__simple_8c.html#a3816ca372248333aa48001f033151901">   34</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="validation__simple_8c.html#a3816ca372248333aa48001f033151901">is_svalid_signedf</a>(<span class="keywordtype">char</span> *str)</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">int</span>   index;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  index = 0;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="numbers_8h.html#a20e05a6847277336ff170cbc5ff149d9">is_valid_signedf</a>(str, &amp;index));</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div><div class="ttc" id="validation__simple_8c_html_a3816ca372248333aa48001f033151901"><div class="ttname"><a href="validation__simple_8c.html#a3816ca372248333aa48001f033151901">is_svalid_signedf</a></div><div class="ttdeci">int is_svalid_signedf(char *str)</div><div class="ttdoc">Vérifie si un réel est valide. </div><div class="ttdef"><b>Definition:</b> <a href="validation__simple_8c_source.html#l00034">validation_simple.c:34</a></div></div>
+<div class="ttc" id="numbers_8h_html_a20e05a6847277336ff170cbc5ff149d9"><div class="ttname"><a href="numbers_8h.html#a20e05a6847277336ff170cbc5ff149d9">is_valid_signedf</a></div><div class="ttdeci">int is_valid_signedf(char *str, int *index)</div><div class="ttdoc">Vérifie si un nombre réel est valide. </div><div class="ttdef"><b>Definition:</b> <a href="validation_8c_source.html#l00046">validation.c:46</a></div></div>
+<div class="ttc" id="numbers_8h_html_ac6964a30af3665e1651e43b77d4ee261"><div class="ttname"><a href="numbers_8h.html#ac6964a30af3665e1651e43b77d4ee261">is_valid_nbr</a></div><div class="ttdeci">int is_valid_nbr(char *str, int *index)</div><div class="ttdoc">Vérifie si un entier naturel est valide. </div><div class="ttdef"><b>Definition:</b> <a href="validation_8c_source.html#l00010">validation.c:10</a></div></div>
+<div class="ttc" id="validation__simple_8c_html_a045b64c7d387939fb481485c012cdb46"><div class="ttname"><a href="validation__simple_8c.html#a045b64c7d387939fb481485c012cdb46">is_svalid_float</a></div><div class="ttdeci">int is_svalid_float(char *str)</div><div class="ttdoc">Vérifie si un réel positif est valide. </div><div class="ttdef"><b>Definition:</b> <a href="validation__simple_8c_source.html#l00018">validation_simple.c:18</a></div></div>
+<div class="ttc" id="validation__simple_8c_html_a7ca01e23e4dc862cc69a2ca1213e7044"><div class="ttname"><a href="validation__simple_8c.html#a7ca01e23e4dc862cc69a2ca1213e7044">is_svalid_signed</a></div><div class="ttdeci">int is_svalid_signed(char *str)</div><div class="ttdoc">Vérifie si un entier est valide. </div><div class="ttdef"><b>Definition:</b> <a href="validation__simple_8c_source.html#l00026">validation_simple.c:26</a></div></div>
+<div class="ttc" id="validation__simple_8c_html_a319b8f80fc0eabc63c5d8a9566ce17eb"><div class="ttname"><a href="validation__simple_8c.html#a319b8f80fc0eabc63c5d8a9566ce17eb">is_svalid_nbr</a></div><div class="ttdeci">int is_svalid_nbr(char *str)</div><div class="ttdoc">Vérifie si un entier naturel est valide. </div><div class="ttdef"><b>Definition:</b> <a href="validation__simple_8c_source.html#l00010">validation_simple.c:10</a></div></div>
+<div class="ttc" id="numbers_8h_html_a2f2beb5b51a2f859e0fb724833174fa3"><div class="ttname"><a href="numbers_8h.html#a2f2beb5b51a2f859e0fb724833174fa3">is_valid_signed</a></div><div class="ttdeci">int is_valid_signed(char *str, int *index)</div><div class="ttdoc">Vérifie si un nombre entier est valide. </div><div class="ttdef"><b>Definition:</b> <a href="validation_8c_source.html#l00037">validation.c:37</a></div></div>
+<div class="ttc" id="numbers_8h_html_a6992181d9ef9061cad273be1a264fe7e"><div class="ttname"><a href="numbers_8h.html#a6992181d9ef9061cad273be1a264fe7e">is_valid_float</a></div><div class="ttdeci">int is_valid_float(char *str, int *index)</div><div class="ttdoc">Vérifie si un nombre réel positif est valide. </div><div class="ttdef"><b>Definition:</b> <a href="validation_8c_source.html#l00023">validation.c:23</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_63d3ea0de2424a750c24486ca5639d5c.html">numbers</a></li><li class="navelem"><a class="el" href="validation__simple_8c.html">validation_simple.c</a></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
+</body>
+</html>

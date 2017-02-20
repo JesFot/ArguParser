@@ -1,0 +1,126 @@
+\hypertarget{validation_8c}{}\section{Référence du fichier src/numbers/validation.c}
+\label{validation_8c}\index{src/numbers/validation.\+c@{src/numbers/validation.\+c}}
+
+
+Déclaration des fonctions de validation.  
+
+
+{\ttfamily \#include \char`\"{}../../include/numbers.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de validation.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{validation_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{validation_8c_ac6964a30af3665e1651e43b77d4ee261}{is\+\_\+valid\+\_\+nbr} (char $\ast$str, int $\ast$index)
+\begin{DoxyCompactList}\small\item\em Vérifie si un entier naturel est valide. \end{DoxyCompactList}\item 
+int \hyperlink{validation_8c_a6992181d9ef9061cad273be1a264fe7e}{is\+\_\+valid\+\_\+float} (char $\ast$str, int $\ast$index)
+\begin{DoxyCompactList}\small\item\em Vérifie si un nombre réel positif est valide. \end{DoxyCompactList}\item 
+int \hyperlink{validation_8c_a2f2beb5b51a2f859e0fb724833174fa3}{is\+\_\+valid\+\_\+signed} (char $\ast$str, int $\ast$index)
+\begin{DoxyCompactList}\small\item\em Vérifie si un nombre entier est valide. \end{DoxyCompactList}\item 
+int \hyperlink{validation_8c_a20e05a6847277336ff170cbc5ff149d9}{is\+\_\+valid\+\_\+signedf} (char $\ast$str, int $\ast$index)
+\begin{DoxyCompactList}\small\item\em Vérifie si un nombre réel est valide. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Déclaration des fonctions de validation. 
+
+Déclaration des fonctions complètes de validation des nombres 
+
+\subsection{Documentation des fonctions}
+\hypertarget{validation_8c_a6992181d9ef9061cad273be1a264fe7e}{}\label{validation_8c_a6992181d9ef9061cad273be1a264fe7e} 
+\index{validation.\+c@{validation.\+c}!is\+\_\+valid\+\_\+float@{is\+\_\+valid\+\_\+float}}
+\index{is\+\_\+valid\+\_\+float@{is\+\_\+valid\+\_\+float}!validation.\+c@{validation.\+c}}
+\subsubsection{\texorpdfstring{is\+\_\+valid\+\_\+float()}{is\_valid\_float()}}
+{\footnotesize\ttfamily int is\+\_\+valid\+\_\+float (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{int $\ast$}]{index }\end{DoxyParamCaption})}
+
+
+
+Vérifie si un nombre réel positif est valide. 
+
+Vérifie si le string donné contient un réel positif à partir de \textquotesingle{}index\textquotesingle{} jusqu\textquotesingle{}à la fin.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em str} & La chaine de caractère à vérifier \\
+\hline
+{\em index} & L\textquotesingle{}index de départ \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 23 du fichier validation.\+c.
+
+\hypertarget{validation_8c_ac6964a30af3665e1651e43b77d4ee261}{}\label{validation_8c_ac6964a30af3665e1651e43b77d4ee261} 
+\index{validation.\+c@{validation.\+c}!is\+\_\+valid\+\_\+nbr@{is\+\_\+valid\+\_\+nbr}}
+\index{is\+\_\+valid\+\_\+nbr@{is\+\_\+valid\+\_\+nbr}!validation.\+c@{validation.\+c}}
+\subsubsection{\texorpdfstring{is\+\_\+valid\+\_\+nbr()}{is\_valid\_nbr()}}
+{\footnotesize\ttfamily int is\+\_\+valid\+\_\+nbr (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{int $\ast$}]{index }\end{DoxyParamCaption})}
+
+
+
+Vérifie si un entier naturel est valide. 
+
+Vérifie si le string donné contient un entier naturel à partir de \textquotesingle{}index\textquotesingle{} jusqu\textquotesingle{}à la fin.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em str} & La chaine de caractère à vérifier \\
+\hline
+{\em index} & L\textquotesingle{}index de départ \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 10 du fichier validation.\+c.
+
+\hypertarget{validation_8c_a2f2beb5b51a2f859e0fb724833174fa3}{}\label{validation_8c_a2f2beb5b51a2f859e0fb724833174fa3} 
+\index{validation.\+c@{validation.\+c}!is\+\_\+valid\+\_\+signed@{is\+\_\+valid\+\_\+signed}}
+\index{is\+\_\+valid\+\_\+signed@{is\+\_\+valid\+\_\+signed}!validation.\+c@{validation.\+c}}
+\subsubsection{\texorpdfstring{is\+\_\+valid\+\_\+signed()}{is\_valid\_signed()}}
+{\footnotesize\ttfamily int is\+\_\+valid\+\_\+signed (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{int $\ast$}]{index }\end{DoxyParamCaption})}
+
+
+
+Vérifie si un nombre entier est valide. 
+
+Vérifie si le string donné contient un entier à partir de \textquotesingle{}index\textquotesingle{} jusqu\textquotesingle{}à la fin.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em str} & La chaine de caractère à vérifier \\
+\hline
+{\em index} & L\textquotesingle{}index de départ \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 37 du fichier validation.\+c.
+
+\hypertarget{validation_8c_a20e05a6847277336ff170cbc5ff149d9}{}\label{validation_8c_a20e05a6847277336ff170cbc5ff149d9} 
+\index{validation.\+c@{validation.\+c}!is\+\_\+valid\+\_\+signedf@{is\+\_\+valid\+\_\+signedf}}
+\index{is\+\_\+valid\+\_\+signedf@{is\+\_\+valid\+\_\+signedf}!validation.\+c@{validation.\+c}}
+\subsubsection{\texorpdfstring{is\+\_\+valid\+\_\+signedf()}{is\_valid\_signedf()}}
+{\footnotesize\ttfamily int is\+\_\+valid\+\_\+signedf (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{int $\ast$}]{index }\end{DoxyParamCaption})}
+
+
+
+Vérifie si un nombre réel est valide. 
+
+Vérifie si le string donné contient un réel à partir de \textquotesingle{}index\textquotesingle{} jusqu\textquotesingle{}à la fin.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em str} & La chaine de caractère à vérifier \\
+\hline
+{\em index} & L\textquotesingle{}index de départ \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 46 du fichier validation.\+c.
+
