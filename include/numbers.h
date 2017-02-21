@@ -16,10 +16,9 @@ int	is_svalid_signedf(char *str);
 
 /* int	is_valid_size(char *str, int size); */
 
-int	our_stoi(char *str, int *index);
-long	our_stol(char *str, int *index);
-float	our_stof(char *str, int *index);
-double	our_stod(char *str, int *index);
+int		our_stoi(char *str, int *index);
+unsigned long	our_stol(char *str, int *index);
+double		our_stod(char *str, int *index);
 
 #endif	/* !NUMBERS_H_ */
 

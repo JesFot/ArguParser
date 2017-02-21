@@ -21,10 +21,10 @@ int	our_stoi(char *str, int *index)
   return (result * is_neg);
 }
 
-long	our_stol(char *str, int *index)
+unsigned long	our_stol(char *str, int *index)
 {
-  long	result;
-  int	is_neg;
+  long		result;
+  int		is_neg;
 
   is_neg = 1;
   result = 0;
@@ -40,27 +40,6 @@ long	our_stol(char *str, int *index)
       *index += 1;
     }
   return (result * is_neg);
-}
-
-float	our_stof(char *str, int *index)
-{
-  float	result;
-  float	tmp;
-
-  result = 0;
-  result += our_stoi(str, index);
-  if (str[*index] != '.' || !is_num(str[*index + 1]))
-    {
-      return (result);
-    }
-  *index += 1;
-  tmp = our_stoi(str, index);
-  while (tmp >= 1)
-    {
-      tmp /= 10;
-    }
-  result += tmp;
-  return (result);
 }
 
 double		our_stod(char *str, int *index)
