@@ -27,6 +27,14 @@ t_flag		*register_flag(t_flaglist list, char *name, int val_type, int mandatory)
       return (NULL);
     }
   result->value->type = val_type;
+  result->default_value = malloc(sizeof(t_argvalue));
+  if (result->default_value == NULL)
+    {
+      free(result->value);
+      free(result);
+      return (NULL);
+    }
+  result->default_value->type = val_type;
   str_cpy(result->key, name, MAX_KEY_LENGTH);
   /*TODO add to list*/
   return (result);

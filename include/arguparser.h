@@ -41,7 +41,8 @@ enum	e_use_of_key
 
 struct	s_argvalue
 {
-    int	type;
+    int		type;
+    char	name[MAX_DESCRIPTION_LENGTH];
     union
     {
         char	v_char;
@@ -50,7 +51,7 @@ struct	s_argvalue
         double	v_double;
         float	v_float;
         char	*v_string;
-    }	value;
+    }		value;
 };
 
 typedef	struct s_argvalue	t_argvalue;
@@ -64,8 +65,14 @@ struct			s_arg
     char		key[MAX_KEY_LENGTH];
     char		description[MAX_DESCRIPTION_LENGTH];
     t_argvalue		*value;
+    t_argvalue		*default_value;
     struct s_arg	*prev_arg;
     struct s_arg	*next_arg;
+    struct s_control	*control_arg;
+};
+
+struct	s_control
+{
     struct s_arg	*first_arg;
     struct s_arg	*final_arg;
 };
